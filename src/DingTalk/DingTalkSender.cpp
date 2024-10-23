@@ -78,8 +78,8 @@ std::string SendDingTalkMessage(const std::string &webhookURL, const std::string
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &responseData);
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER,
                          curl_slist_append(nullptr, "Content-Type: application/json;charset=utf-8"));
-        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L); // 验证对等证书
-        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L); // 验证主机
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L); // 禁用验证对等证书 2L为启用
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L); // 禁用验证主机 2L为启用
         curl_easy_setopt(curl, CURLOPT_CAINFO, "./cacert.pem");
 
         // 执行请求
