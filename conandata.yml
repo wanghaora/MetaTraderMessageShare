@@ -1,0 +1,8 @@
+﻿# This file is managed by Conan, contents will be overwritten.
+# To keep your changes, remove these comment lines, but the plugin won't be able to modify your requirements
+
+requirements:
+  - "icu/75.1"
+  - "libcurl/8.10.1"
+  - "cjson/1.7.18"
+  - "openssl/3.3.2"
