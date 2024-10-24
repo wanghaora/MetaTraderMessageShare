@@ -73,7 +73,7 @@ cmake .. -G Ninja -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES="conan_provider.cmake"
 
 ## MQL使用：
 
-MQL5代码：
+### MQL5：
 
 ```c
 #property description "--------------------------------"
@@ -126,7 +126,7 @@ string readableLocalTime() {
 
 ```
 
-## mql4
+### mql4：
 
 ```bash
 #property description "--------------------------------"
